@@ -1,0 +1,6 @@
+include ':libcocos2dx'
+project(':libcocos2dx').projectDir = new File(settingsDir, '../../../cocos2dx/v3/cocos/platform/android/libcocos2dx')
+include ':libspeedcc'
+project(':libspeedcc').projectDir = new File(settingsDir, '../../../speedcc/platform/android/speedcc')
+include ':UITest'
+project(':UITest').projectDir = new File(settingsDir, 'app')

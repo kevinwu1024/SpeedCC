@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A0C34BD2029E735003A7A31 /* SCBinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C34BB2029E735003A7A31 /* SCBinder.cpp */; };
+		0A0C34DF202BFDC2003A7A31 /* SCBehaviorStage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C34C5202BFDC2003A7A31 /* SCBehaviorStage.cpp */; };
+		0A0C34E1202BFDC2003A7A31 /* SCMessageDefaultProc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C34CC202BFDC2003A7A31 /* SCMessageDefaultProc.cpp */; };
+		0A0C34E2202BFDC2003A7A31 /* SCStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C34CD202BFDC2003A7A31 /* SCStrategy.cpp */; };
+		0A0C34E3202BFDC2003A7A31 /* SCBehaviorCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C34CE202BFDC2003A7A31 /* SCBehaviorCommon.cpp */; };
+		0A0C34E4202BFDC2003A7A31 /* SCStage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C34D0202BFDC2003A7A31 /* SCStage.cpp */; };
+		0A0C34E5202BFDC2003A7A31 /* SCMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C34D3202BFDC2003A7A31 /* SCMessage.cpp */; };
+		0A0C34E6202BFDC2003A7A31 /* SCPlayObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C34D7202BFDC2003A7A31 /* SCPlayObject.cpp */; };
+		0A0C34E7202BFDC2003A7A31 /* SCMessageDispatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C34D9202BFDC2003A7A31 /* SCMessageDispatch.cpp */; };
+		0A0C34E8202BFDC2003A7A31 /* SCActor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C34DA202BFDC2003A7A31 /* SCActor.cpp */; };
+		0A0C34E9202BFDC2003A7A31 /* SCBehaviorCocos.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C34DB202BFDC2003A7A31 /* SCBehaviorCocos.cpp */; };
+		0A0CC5DB2367AFAD004DE91D /* SCAssetUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A0CC5D92367AFAD004DE91D /* SCAssetUtils.cpp */; };
+		0A1556C71FD4F31600CF7420 /* SCObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A1556C31FD4F31500CF7420 /* SCObject.cpp */; };
+		0A28035A1FAB073B00E0174C /* SCDictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A2803581FAB073A00E0174C /* SCDictionary.cpp */; };
+		0A28035D1FAB0A6B00E0174C /* SCVersion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A28035B1FAB0A6B00E0174C /* SCVersion.cpp */; };
+		0A41B3361FE679E3003945EB /* SCBinderCocos.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A41B3341FE679E3003945EB /* SCBinderCocos.cpp */; };
+		0A41B3441FE7C5F0003945EB /* SCRefHolder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A41B3421FE7C5F0003945EB /* SCRefHolder.cpp */; };
+		0A41B3471FE7D9FC003945EB /* SCWatchString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A41B3461FE7D9FC003945EB /* SCWatchString.cpp */; };
+		0A41B3651FE946B8003945EB /* SCString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A41B3641FE946B7003945EB /* SCString.cpp */; };
+		0A41B3811FEA3706003945EB /* SCViewController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A41B37F1FEA3706003945EB /* SCViewController.cpp */; };
+		0A41B3861FEA4F90003945EB /* SCiOSSystem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A41B3841FEA4F90003945EB /* SCiOSSystem.mm */; };
+		0A41B39E1FEB8C60003945EB /* SCSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A41B3981FEB8C60003945EB /* SCSystem.cpp */; };
+		0A41B3A01FEB8C60003945EB /* SCStore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A41B39A1FEB8C60003945EB /* SCStore.cpp */; };
+		0A41B3A21FEBC478003945EB /* SCiOSStore.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A41B3A11FEBC478003945EB /* SCiOSStore.mm */; };
+		0A41B3A51FEBEE93003945EB /* SCSetting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A41B3A31FEBEE93003945EB /* SCSetting.cpp */; };
+		0A41B3CF1FEE1886003945EB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A41B3CE1FEE1886003945EB /* StoreKit.framework */; };
+		0A41B3E91FEF7693003945EB /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A41B3E31FEF7693003945EB /* Reachability.m */; };
+		0A60F8652010309500B6B5A3 /* SCAudioManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A60F8632010309500B6B5A3 /* SCAudioManager.cpp */; };
+		0A6218E12004C6F600459055 /* SCEventEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A6218DF2004C6F600459055 /* SCEventEmitter.cpp */; };
+		0A67CAEB1F813C9500FED9A5 /* SCMemAllocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A67CAE11F813C8700FED9A5 /* SCMemAllocator.cpp */; };
+		0A67CB091F81DF7100FED9A5 /* SCValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A67CB031F81DF7000FED9A5 /* SCValue.cpp */; };
+		0A67CB101F81E4CF00FED9A5 /* SCDateTime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A67CB0F1F81E4CE00FED9A5 /* SCDateTime.cpp */; };
+		0A67CB171F81E8EA00FED9A5 /* SCDataBlock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A67CB161F81E8E900FED9A5 /* SCDataBlock.cpp */; };
+		0A67CB861F97984F00FED9A5 /* SCOSSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A67CB1E1F81EAB900FED9A5 /* SCOSSystem.cpp */; };
+		0A75E4382014DB5100918565 /* SCViewBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A75E4362014DB5100918565 /* SCViewBuilder.cpp */; };
+		0A75E4402014E6B300918565 /* SCUIArg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A75E43E2014E6B300918565 /* SCUIArg.cpp */; };
+		0A85A0422367987500A2FB76 /* SCBehaviorSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A85A0402367987500A2FB76 /* SCBehaviorSystem.cpp */; };
+		0A8868181FDA536F00866266 /* SCNodeStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A88680F1FDA536E00866266 /* SCNodeStyle.cpp */; };
+		0A8868191FDA536F00866266 /* SCViewNavigator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A8868111FDA536E00866266 /* SCViewNavigator.cpp */; };
+		0A88681A1FDA536F00866266 /* SCView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A8868131FDA536E00866266 /* SCView.cpp */; };
+		0A88681B1FDA536F00866266 /* SCNodeUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A8868151FDA536E00866266 /* SCNodeUtils.cpp */; };
+		0ACD86D8205D25310029757F /* SCHttpFetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACD86D4205D25310029757F /* SCHttpFetcher.cpp */; };
+		0ACD87142064A5120029757F /* SCNodeAttachment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACD87132064A5110029757F /* SCNodeAttachment.cpp */; };
+		0ACD871720651BF60029757F /* SCRadioGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACD871520651BF50029757F /* SCRadioGroup.cpp */; };
+		0AF3CB9E202C429000EFACB4 /* SCNodeClickable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AF3CB9D202C429000EFACB4 /* SCNodeClickable.cpp */; };
+		0AF447DD229FA5EA00806DF1 /* SCLanguage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AF447DB229FA5EA00806DF1 /* SCLanguage.cpp */; };
+		FA4A203D237E373D00E52E22 /* SCFSMRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA4A203B237E373D00E52E22 /* SCFSMRunner.cpp */; };
+		FA4A203E237E373D00E52E22 /* SCFSMBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA4A203C237E373D00E52E22 /* SCFSMBuilder.cpp */; };
+		FAA083C92357437E00D968D8 /* SCViewControllerLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAA083C72357437E00D968D8 /* SCViewControllerLog.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A67CA7C1F80E31700FED9A5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A0C34BB2029E735003A7A31 /* SCBinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCBinder.cpp; sourceTree = "<group>"; };
+		0A0C34BC2029E735003A7A31 /* SCBinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBinder.h; sourceTree = "<group>"; };
+		0A0C34C1202BFDC2003A7A31 /* SCBehaviorCocos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBehaviorCocos.h; sourceTree = "<group>"; };
+		0A0C34C2202BFDC2003A7A31 /* SCActor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCActor.h; sourceTree = "<group>"; };
+		0A0C34C3202BFDC2003A7A31 /* SCStage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCStage.h; sourceTree = "<group>"; };
+		0A0C34C5202BFDC2003A7A31 /* SCBehaviorStage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCBehaviorStage.cpp; sourceTree = "<group>"; };
+		0A0C34C6202BFDC2003A7A31 /* SCPlayObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPlayObject.h; sourceTree = "<group>"; };
+		0A0C34C7202BFDC2003A7A31 /* SCID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCID.h; sourceTree = "<group>"; };
+		0A0C34C8202BFDC2003A7A31 /* SCStageMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCStageMacros.h; sourceTree = "<group>"; };
+		0A0C34CA202BFDC2003A7A31 /* SCMessageDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCMessageDispatch.h; sourceTree = "<group>"; };
+		0A0C34CC202BFDC2003A7A31 /* SCMessageDefaultProc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCMessageDefaultProc.cpp; sourceTree = "<group>"; };
+		0A0C34CD202BFDC2003A7A31 /* SCStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCStrategy.cpp; sourceTree = "<group>"; };
+		0A0C34CE202BFDC2003A7A31 /* SCBehaviorCommon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCBehaviorCommon.cpp; sourceTree = "<group>"; };
+		0A0C34D0202BFDC2003A7A31 /* SCStage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCStage.cpp; sourceTree = "<group>"; };
+		0A0C34D1202BFDC2003A7A31 /* SCStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCStrategy.h; sourceTree = "<group>"; };
+		0A0C34D3202BFDC2003A7A31 /* SCMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCMessage.cpp; sourceTree = "<group>"; };
+		0A0C34D4202BFDC2003A7A31 /* SCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCMessage.h; sourceTree = "<group>"; };
+		0A0C34D5202BFDC2003A7A31 /* SCFSMMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFSMMacros.h; sourceTree = "<group>"; };
+		0A0C34D6202BFDC2003A7A31 /* SCMessageDefaultProc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCMessageDefaultProc.h; sourceTree = "<group>"; };
+		0A0C34D7202BFDC2003A7A31 /* SCPlayObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCPlayObject.cpp; sourceTree = "<group>"; };
+		0A0C34D8202BFDC2003A7A31 /* SCBehaviorStage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBehaviorStage.h; sourceTree = "<group>"; };
+		0A0C34D9202BFDC2003A7A31 /* SCMessageDispatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCMessageDispatch.cpp; sourceTree = "<group>"; };
+		0A0C34DA202BFDC2003A7A31 /* SCActor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCActor.cpp; sourceTree = "<group>"; };
+		0A0C34DB202BFDC2003A7A31 /* SCBehaviorCocos.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCBehaviorCocos.cpp; sourceTree = "<group>"; };
+		0A0C34DC202BFDC2003A7A31 /* SCBehaviorCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBehaviorCommon.h; sourceTree = "<group>"; };
+		0A0C34EB202C0394003A7A31 /* SCTriggerT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCTriggerT.h; sourceTree = "<group>"; };
+		0A0CC5D92367AFAD004DE91D /* SCAssetUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCAssetUtils.cpp; sourceTree = "<group>"; };
+		0A0CC5DA2367AFAD004DE91D /* SCAssetUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAssetUtils.h; sourceTree = "<group>"; };
+		0A1556C31FD4F31500CF7420 /* SCObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCObject.cpp; sourceTree = "<group>"; };
+		0A1556C61FD4F31600CF7420 /* SCObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCObject.h; sourceTree = "<group>"; };
+		0A2803581FAB073A00E0174C /* SCDictionary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SCDictionary.cpp; sourceTree = "<group>"; };
+		0A2803591FAB073A00E0174C /* SCDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCDictionary.h; sourceTree = "<group>"; };
+		0A28035B1FAB0A6B00E0174C /* SCVersion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SCVersion.cpp; sourceTree = "<group>"; };
+		0A28035C1FAB0A6B00E0174C /* SCVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCVersion.h; sourceTree = "<group>"; };
+		0A41B3291FE113F1003945EB /* SCWatchNumberT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCWatchNumberT.h; sourceTree = "<group>"; };
+		0A41B3341FE679E3003945EB /* SCBinderCocos.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SCBinderCocos.cpp; sourceTree = "<group>"; };
+		0A41B3351FE679E3003945EB /* SCBinderCocos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCBinderCocos.h; sourceTree = "<group>"; };
+		0A41B3421FE7C5F0003945EB /* SCRefHolder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SCRefHolder.cpp; sourceTree = "<group>"; };
+		0A41B3431FE7C5F0003945EB /* SCRefHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCRefHolder.h; sourceTree = "<group>"; };
+		0A41B3451FE7D9A4003945EB /* SCWatchString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCWatchString.h; sourceTree = "<group>"; };
+		0A41B3461FE7D9FC003945EB /* SCWatchString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCWatchString.cpp; sourceTree = "<group>"; };
+		0A41B3631FE946B7003945EB /* SCString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCString.h; sourceTree = "<group>"; };
+		0A41B3641FE946B7003945EB /* SCString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCString.cpp; sourceTree = "<group>"; };
+		0A41B37F1FEA3706003945EB /* SCViewController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCViewController.cpp; sourceTree = "<group>"; };
+		0A41B3801FEA3706003945EB /* SCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCViewController.h; sourceTree = "<group>"; };
+		0A41B3841FEA4F90003945EB /* SCiOSSystem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SCiOSSystem.mm; sourceTree = SOURCE_ROOT; };
+		0A41B3851FEA4F90003945EB /* SCiOSSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCiOSSystem.h; sourceTree = SOURCE_ROOT; };
+		0A41B3981FEB8C60003945EB /* SCSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCSystem.cpp; sourceTree = "<group>"; };
+		0A41B39A1FEB8C60003945EB /* SCStore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCStore.cpp; sourceTree = "<group>"; };
+		0A41B39B1FEB8C60003945EB /* SCStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCStore.h; sourceTree = "<group>"; };
+		0A41B39C1FEB8C60003945EB /* SCSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSystem.h; sourceTree = "<group>"; };
+		0A41B3A11FEBC478003945EB /* SCiOSStore.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SCiOSStore.mm; sourceTree = SOURCE_ROOT; };
+		0A41B3A31FEBEE93003945EB /* SCSetting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SCSetting.cpp; sourceTree = "<group>"; };
+		0A41B3A41FEBEE93003945EB /* SCSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSetting.h; sourceTree = "<group>"; };
+		0A41B3C91FED1B60003945EB /* SCiOSStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCiOSStore.h; sourceTree = SOURCE_ROOT; };
+		0A41B3CE1FEE1886003945EB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		0A41B3E31FEF7693003945EB /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		0A41B3E61FEF7693003945EB /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		0A60F8632010309500B6B5A3 /* SCAudioManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SCAudioManager.cpp; sourceTree = "<group>"; };
+		0A60F8642010309500B6B5A3 /* SCAudioManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAudioManager.h; sourceTree = "<group>"; };
+		0A6218C91FFE68F600459055 /* SCCocosDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCocosDef.h; sourceTree = "<group>"; };
+		0A6218DF2004C6F600459055 /* SCEventEmitter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SCEventEmitter.cpp; sourceTree = "<group>"; };
+		0A6218E02004C6F600459055 /* SCEventEmitter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCEventEmitter.h; sourceTree = "<group>"; };
+		0A67CA7E1F80E31700FED9A5 /* libspeedcc-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libspeedcc-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A67CAE11F813C8700FED9A5 /* SCMemAllocator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SCMemAllocator.cpp; sourceTree = "<group>"; };
+		0A67CAE21F813C8800FED9A5 /* SCMemAllocator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMemAllocator.h; sourceTree = "<group>"; };
+		0A67CAE51F813C8900FED9A5 /* SCBaseMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCBaseMacros.h; sourceTree = "<group>"; };
+		0A67CB031F81DF7000FED9A5 /* SCValue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SCValue.cpp; sourceTree = "<group>"; };
+		0A67CB061F81DF7000FED9A5 /* SCObjRefT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCObjRefT.h; sourceTree = "<group>"; };
+		0A67CB071F81DF7100FED9A5 /* SCValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCValue.h; sourceTree = "<group>"; };
+		0A67CB081F81DF7100FED9A5 /* SCObjPtrT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCObjPtrT.h; sourceTree = "<group>"; };
+		0A67CB0C1F81E4CE00FED9A5 /* SCDateTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCDateTime.h; sourceTree = "<group>"; };
+		0A67CB0F1F81E4CE00FED9A5 /* SCDateTime.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SCDateTime.cpp; sourceTree = "<group>"; };
+		0A67CB131F81E74B00FED9A5 /* SCTemplateDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCTemplateDef.h; sourceTree = "<group>"; };
+		0A67CB141F81E74B00FED9A5 /* SCTemplateUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCTemplateUtils.h; sourceTree = "<group>"; };
+		0A67CB151F81E8E900FED9A5 /* SCDataBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCDataBlock.h; sourceTree = "<group>"; };
+		0A67CB161F81E8E900FED9A5 /* SCDataBlock.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SCDataBlock.cpp; sourceTree = "<group>"; };
+		0A67CB181F81E95300FED9A5 /* SCBufferRefT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCBufferRefT.h; sourceTree = "<group>"; };
+		0A67CB1E1F81EAB900FED9A5 /* SCOSSystem.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SCOSSystem.cpp; sourceTree = "<group>"; };
+		0A67CB1F1F81EAB900FED9A5 /* SCOSSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCOSSystem.h; sourceTree = "<group>"; };
+		0A67CB691F8A338500FED9A5 /* SpeedCC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SpeedCC.h; path = ../../SpeedCC.h; sourceTree = "<group>"; };
+		0A75E4362014DB5100918565 /* SCViewBuilder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SCViewBuilder.cpp; sourceTree = "<group>"; };
+		0A75E4372014DB5100918565 /* SCViewBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCViewBuilder.h; sourceTree = "<group>"; };
+		0A75E43E2014E6B300918565 /* SCUIArg.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SCUIArg.cpp; sourceTree = "<group>"; };
+		0A75E43F2014E6B300918565 /* SCUIArg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCUIArg.h; sourceTree = "<group>"; };
+		0A85A0402367987500A2FB76 /* SCBehaviorSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCBehaviorSystem.cpp; sourceTree = "<group>"; };
+		0A85A0412367987500A2FB76 /* SCBehaviorSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBehaviorSystem.h; sourceTree = "<group>"; };
+		0A88680E1FDA536E00866266 /* SCNodeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNodeStyle.h; sourceTree = "<group>"; };
+		0A88680F1FDA536E00866266 /* SCNodeStyle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCNodeStyle.cpp; sourceTree = "<group>"; };
+		0A8868101FDA536E00866266 /* SCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCView.h; sourceTree = "<group>"; };
+		0A8868111FDA536E00866266 /* SCViewNavigator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCViewNavigator.cpp; sourceTree = "<group>"; };
+		0A8868121FDA536E00866266 /* SCNodeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNodeUtils.h; sourceTree = "<group>"; };
+		0A8868131FDA536E00866266 /* SCView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCView.cpp; sourceTree = "<group>"; };
+		0A8868151FDA536E00866266 /* SCNodeUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCNodeUtils.cpp; sourceTree = "<group>"; };
+		0A8868161FDA536E00866266 /* SCViewNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCViewNavigator.h; sourceTree = "<group>"; };
+		0A8868171FDA536E00866266 /* SCViewMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCViewMacros.h; sourceTree = "<group>"; };
+		0ACD86D4205D25310029757F /* SCHttpFetcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCHttpFetcher.cpp; sourceTree = "<group>"; };
+		0ACD86D5205D25310029757F /* SCHttpFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCHttpFetcher.h; sourceTree = "<group>"; };
+		0ACD87102064A5110029757F /* SCNodeAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNodeAttachment.h; sourceTree = "<group>"; };
+		0ACD87132064A5110029757F /* SCNodeAttachment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCNodeAttachment.cpp; sourceTree = "<group>"; };
+		0ACD871520651BF50029757F /* SCRadioGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCRadioGroup.cpp; sourceTree = "<group>"; };
+		0ACD871620651BF60029757F /* SCRadioGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRadioGroup.h; sourceTree = "<group>"; };
+		0AF3CB9C202C429000EFACB4 /* SCNodeClickable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNodeClickable.h; sourceTree = "<group>"; };
+		0AF3CB9D202C429000EFACB4 /* SCNodeClickable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCNodeClickable.cpp; sourceTree = "<group>"; };
+		0AF447DB229FA5EA00806DF1 /* SCLanguage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCLanguage.cpp; sourceTree = "<group>"; };
+		0AF447DC229FA5EA00806DF1 /* SCLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLanguage.h; sourceTree = "<group>"; };
+		0AFBB4D520DEA03B0047EC19 /* SCBufferQueueT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBufferQueueT.h; sourceTree = "<group>"; };
+		FA46C8D5237671E400051553 /* SCConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCConfig.h; sourceTree = "<group>"; };
+		FA4A2039237E373D00E52E22 /* SCFSMRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFSMRunner.h; sourceTree = "<group>"; };
+		FA4A203A237E373D00E52E22 /* SCFSMBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFSMBuilder.h; sourceTree = "<group>"; };
+		FA4A203B237E373D00E52E22 /* SCFSMRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCFSMRunner.cpp; sourceTree = "<group>"; };
+		FA4A203C237E373D00E52E22 /* SCFSMBuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCFSMBuilder.cpp; sourceTree = "<group>"; };
+		FAA083C72357437E00D968D8 /* SCViewControllerLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCViewControllerLog.cpp; sourceTree = "<group>"; };
+		FAA083C82357437E00D968D8 /* SCViewControllerLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCViewControllerLog.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A67CA7B1F80E31700FED9A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A41B3CF1FEE1886003945EB /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A0C34C0202BFDC2003A7A31 /* stage */ = {
+			isa = PBXGroup;
+			children = (
+				0A0C34D5202BFDC2003A7A31 /* SCFSMMacros.h */,
+				FA4A203C237E373D00E52E22 /* SCFSMBuilder.cpp */,
+				FA4A203A237E373D00E52E22 /* SCFSMBuilder.h */,
+				FA4A203B237E373D00E52E22 /* SCFSMRunner.cpp */,
+				FA4A2039237E373D00E52E22 /* SCFSMRunner.h */,
+				0A85A0402367987500A2FB76 /* SCBehaviorSystem.cpp */,
+				0A85A0412367987500A2FB76 /* SCBehaviorSystem.h */,
+				0A0C34C6202BFDC2003A7A31 /* SCPlayObject.h */,
+				0A0C34D7202BFDC2003A7A31 /* SCPlayObject.cpp */,
+				0A0C34C2202BFDC2003A7A31 /* SCActor.h */,
+				0A0C34DA202BFDC2003A7A31 /* SCActor.cpp */,
+				0A0C34C3202BFDC2003A7A31 /* SCStage.h */,
+				0A0C34D0202BFDC2003A7A31 /* SCStage.cpp */,
+				0A0C34D1202BFDC2003A7A31 /* SCStrategy.h */,
+				0A0C34CD202BFDC2003A7A31 /* SCStrategy.cpp */,
+				0A0C34D4202BFDC2003A7A31 /* SCMessage.h */,
+				0A0C34D3202BFDC2003A7A31 /* SCMessage.cpp */,
+				0A0C34CA202BFDC2003A7A31 /* SCMessageDispatch.h */,
+				0A0C34D9202BFDC2003A7A31 /* SCMessageDispatch.cpp */,
+				0A0C34D6202BFDC2003A7A31 /* SCMessageDefaultProc.h */,
+				0A0C34CC202BFDC2003A7A31 /* SCMessageDefaultProc.cpp */,
+				0A0C34D8202BFDC2003A7A31 /* SCBehaviorStage.h */,
+				0A0C34C5202BFDC2003A7A31 /* SCBehaviorStage.cpp */,
+				0A0C34DC202BFDC2003A7A31 /* SCBehaviorCommon.h */,
+				0A0C34CE202BFDC2003A7A31 /* SCBehaviorCommon.cpp */,
+				0A0C34C1202BFDC2003A7A31 /* SCBehaviorCocos.h */,
+				0A0C34DB202BFDC2003A7A31 /* SCBehaviorCocos.cpp */,
+				0A0C34C8202BFDC2003A7A31 /* SCStageMacros.h */,
+				0A0C34C7202BFDC2003A7A31 /* SCID.h */,
+				0A0C34EB202C0394003A7A31 /* SCTriggerT.h */,
+			);
+			name = stage;
+			path = ../../stage;
+			sourceTree = "<group>";
+		};
+		0A41B3831FEA4F71003945EB /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				0A41B3E21FEF7693003945EB /* support */,
+				0A41B3C91FED1B60003945EB /* SCiOSStore.h */,
+				0A41B3A11FEBC478003945EB /* SCiOSStore.mm */,
+				0A41B3851FEA4F90003945EB /* SCiOSSystem.h */,
+				0A41B3841FEA4F90003945EB /* SCiOSSystem.mm */,
+			);
+			name = ios;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		0A41B3971FEB8C60003945EB /* system */ = {
+			isa = PBXGroup;
+			children = (
+				FA46C8D5237671E400051553 /* SCConfig.h */,
+				0A0CC5D92367AFAD004DE91D /* SCAssetUtils.cpp */,
+				0A0CC5DA2367AFAD004DE91D /* SCAssetUtils.h */,
+				0AF447DB229FA5EA00806DF1 /* SCLanguage.cpp */,
+				0AF447DC229FA5EA00806DF1 /* SCLanguage.h */,
+				0A41B39C1FEB8C60003945EB /* SCSystem.h */,
+				0A41B3981FEB8C60003945EB /* SCSystem.cpp */,
+				0A41B39B1FEB8C60003945EB /* SCStore.h */,
+				0A41B39A1FEB8C60003945EB /* SCStore.cpp */,
+				0A41B3A31FEBEE93003945EB /* SCSetting.cpp */,
+				0A41B3A41FEBEE93003945EB /* SCSetting.h */,
+				0A60F8632010309500B6B5A3 /* SCAudioManager.cpp */,
+				0A60F8642010309500B6B5A3 /* SCAudioManager.h */,
+			);
+			name = system;
+			path = ../../system;
+			sourceTree = "<group>";
+		};
+		0A41B3E21FEF7693003945EB /* support */ = {
+			isa = PBXGroup;
+			children = (
+				0A41B3E61FEF7693003945EB /* Reachability.h */,
+				0A41B3E31FEF7693003945EB /* Reachability.m */,
+			);
+			path = support;
+			sourceTree = SOURCE_ROOT;
+		};
+		0A67CA751F80E31700FED9A5 = {
+			isa = PBXGroup;
+			children = (
+				0A67CB691F8A338500FED9A5 /* SpeedCC.h */,
+				0A67CACA1F80E9E700FED9A5 /* base */,
+				0A88680D1FDA536E00866266 /* cocos */,
+				0A0C34C0202BFDC2003A7A31 /* stage */,
+				0A67CB191F81EAB900FED9A5 /* platform */,
+				0ACD86D3205D25300029757F /* network */,
+				0A41B3971FEB8C60003945EB /* system */,
+				0A67CA7F1F80E31700FED9A5 /* Products */,
+				0A67CA981F80E3AA00FED9A5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0A67CA7F1F80E31700FED9A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A67CA7E1F80E31700FED9A5 /* libspeedcc-iOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A67CA981F80E3AA00FED9A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A41B3CE1FEE1886003945EB /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A67CACA1F80E9E700FED9A5 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				0AFBB4D520DEA03B0047EC19 /* SCBufferQueueT.h */,
+				0A0C34BB2029E735003A7A31 /* SCBinder.cpp */,
+				0A0C34BC2029E735003A7A31 /* SCBinder.h */,
+				0A41B3641FE946B7003945EB /* SCString.cpp */,
+				0A41B3631FE946B7003945EB /* SCString.h */,
+				0A1556C31FD4F31500CF7420 /* SCObject.cpp */,
+				0A1556C61FD4F31600CF7420 /* SCObject.h */,
+				0A67CB181F81E95300FED9A5 /* SCBufferRefT.h */,
+				0A67CB161F81E8E900FED9A5 /* SCDataBlock.cpp */,
+				0A67CB151F81E8E900FED9A5 /* SCDataBlock.h */,
+				0A67CB131F81E74B00FED9A5 /* SCTemplateDef.h */,
+				0A67CB141F81E74B00FED9A5 /* SCTemplateUtils.h */,
+				0A67CB0F1F81E4CE00FED9A5 /* SCDateTime.cpp */,
+				0A67CB0C1F81E4CE00FED9A5 /* SCDateTime.h */,
+				0A67CB081F81DF7100FED9A5 /* SCObjPtrT.h */,
+				0A67CB061F81DF7000FED9A5 /* SCObjRefT.h */,
+				0A67CB031F81DF7000FED9A5 /* SCValue.cpp */,
+				0A67CB071F81DF7100FED9A5 /* SCValue.h */,
+				0A67CAE51F813C8900FED9A5 /* SCBaseMacros.h */,
+				0A67CAE11F813C8700FED9A5 /* SCMemAllocator.cpp */,
+				0A67CAE21F813C8800FED9A5 /* SCMemAllocator.h */,
+				0A2803581FAB073A00E0174C /* SCDictionary.cpp */,
+				0A2803591FAB073A00E0174C /* SCDictionary.h */,
+				0A28035B1FAB0A6B00E0174C /* SCVersion.cpp */,
+				0A28035C1FAB0A6B00E0174C /* SCVersion.h */,
+				0A41B3291FE113F1003945EB /* SCWatchNumberT.h */,
+				0A41B3451FE7D9A4003945EB /* SCWatchString.h */,
+				0A41B3461FE7D9FC003945EB /* SCWatchString.cpp */,
+			);
+			name = base;
+			path = ../../base;
+			sourceTree = "<group>";
+		};
+		0A67CB191F81EAB900FED9A5 /* platform */ = {
+			isa = PBXGroup;
+			children = (
+				0A41B3831FEA4F71003945EB /* ios */,
+				0A67CB1E1F81EAB900FED9A5 /* SCOSSystem.cpp */,
+				0A67CB1F1F81EAB900FED9A5 /* SCOSSystem.h */,
+			);
+			name = platform;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		0A88680D1FDA536E00866266 /* cocos */ = {
+			isa = PBXGroup;
+			children = (
+				FAA083C72357437E00D968D8 /* SCViewControllerLog.cpp */,
+				FAA083C82357437E00D968D8 /* SCViewControllerLog.h */,
+				0ACD871520651BF50029757F /* SCRadioGroup.cpp */,
+				0ACD871620651BF60029757F /* SCRadioGroup.h */,
+				0ACD87132064A5110029757F /* SCNodeAttachment.cpp */,
+				0ACD87102064A5110029757F /* SCNodeAttachment.h */,
+				0AF3CB9D202C429000EFACB4 /* SCNodeClickable.cpp */,
+				0AF3CB9C202C429000EFACB4 /* SCNodeClickable.h */,
+				0A41B37F1FEA3706003945EB /* SCViewController.cpp */,
+				0A41B3801FEA3706003945EB /* SCViewController.h */,
+				0A88680E1FDA536E00866266 /* SCNodeStyle.h */,
+				0A88680F1FDA536E00866266 /* SCNodeStyle.cpp */,
+				0A8868101FDA536E00866266 /* SCView.h */,
+				0A8868131FDA536E00866266 /* SCView.cpp */,
+				0A8868121FDA536E00866266 /* SCNodeUtils.h */,
+				0A8868151FDA536E00866266 /* SCNodeUtils.cpp */,
+				0A8868161FDA536E00866266 /* SCViewNavigator.h */,
+				0A8868111FDA536E00866266 /* SCViewNavigator.cpp */,
+				0A8868171FDA536E00866266 /* SCViewMacros.h */,
+				0A41B3341FE679E3003945EB /* SCBinderCocos.cpp */,
+				0A41B3351FE679E3003945EB /* SCBinderCocos.h */,
+				0A41B3421FE7C5F0003945EB /* SCRefHolder.cpp */,
+				0A41B3431FE7C5F0003945EB /* SCRefHolder.h */,
+				0A6218C91FFE68F600459055 /* SCCocosDef.h */,
+				0A6218DF2004C6F600459055 /* SCEventEmitter.cpp */,
+				0A6218E02004C6F600459055 /* SCEventEmitter.h */,
+				0A75E4362014DB5100918565 /* SCViewBuilder.cpp */,
+				0A75E4372014DB5100918565 /* SCViewBuilder.h */,
+				0A75E43E2014E6B300918565 /* SCUIArg.cpp */,
+				0A75E43F2014E6B300918565 /* SCUIArg.h */,
+			);
+			name = cocos;
+			path = ../../cocos;
+			sourceTree = "<group>";
+		};
+		0ACD86D3205D25300029757F /* network */ = {
+			isa = PBXGroup;
+			children = (
+				0ACD86D4205D25310029757F /* SCHttpFetcher.cpp */,
+				0ACD86D5205D25310029757F /* SCHttpFetcher.h */,
+			);
+			name = network;
+			path = ../../network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A67CA7D1F80E31700FED9A5 /* libspeedcc-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A67CA871F80E31700FED9A5 /* Build configuration list for PBXNativeTarget "libspeedcc-iOS" */;
+			buildPhases = (
+				0A67CA7A1F80E31700FED9A5 /* Sources */,
+				0A67CA7B1F80E31700FED9A5 /* Frameworks */,
+				0A67CA7C1F80E31700FED9A5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libspeedcc-iOS";
+			productName = speedcc;
+			productReference = 0A67CA7E1F80E31700FED9A5 /* libspeedcc-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A67CA761F80E31700FED9A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = speedcc;
+				TargetAttributes = {
+					0A67CA7D1F80E31700FED9A5 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0A67CA791F80E31700FED9A5 /* Build configuration list for PBXProject "speedcc" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0A67CA751F80E31700FED9A5;
+			productRefGroup = 0A67CA7F1F80E31700FED9A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A67CA7D1F80E31700FED9A5 /* libspeedcc-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A67CA7A1F80E31700FED9A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A41B3A01FEB8C60003945EB /* SCStore.cpp in Sources */,
+				0A88681B1FDA536F00866266 /* SCNodeUtils.cpp in Sources */,
+				0A0C34BD2029E735003A7A31 /* SCBinder.cpp in Sources */,
+				0ACD87142064A5120029757F /* SCNodeAttachment.cpp in Sources */,
+				0A60F8652010309500B6B5A3 /* SCAudioManager.cpp in Sources */,
+				FAA083C92357437E00D968D8 /* SCViewControllerLog.cpp in Sources */,
+				0A88681A1FDA536F00866266 /* SCView.cpp in Sources */,
+				0ACD86D8205D25310029757F /* SCHttpFetcher.cpp in Sources */,
+				0A1556C71FD4F31600CF7420 /* SCObject.cpp in Sources */,
+				0A28035D1FAB0A6B00E0174C /* SCVersion.cpp in Sources */,
+				0A41B3A51FEBEE93003945EB /* SCSetting.cpp in Sources */,
+				0A0C34E7202BFDC2003A7A31 /* SCMessageDispatch.cpp in Sources */,
+				0A41B3A21FEBC478003945EB /* SCiOSStore.mm in Sources */,
+				0A8868191FDA536F00866266 /* SCViewNavigator.cpp in Sources */,
+				0A41B3E91FEF7693003945EB /* Reachability.m in Sources */,
+				0A41B39E1FEB8C60003945EB /* SCSystem.cpp in Sources */,
+				0A85A0422367987500A2FB76 /* SCBehaviorSystem.cpp in Sources */,
+				0A67CB861F97984F00FED9A5 /* SCOSSystem.cpp in Sources */,
+				0A0C34E3202BFDC2003A7A31 /* SCBehaviorCommon.cpp in Sources */,
+				0A0C34E1202BFDC2003A7A31 /* SCMessageDefaultProc.cpp in Sources */,
+				0A41B3861FEA4F90003945EB /* SCiOSSystem.mm in Sources */,
+				0A0C34E6202BFDC2003A7A31 /* SCPlayObject.cpp in Sources */,
+				0A8868181FDA536F00866266 /* SCNodeStyle.cpp in Sources */,
+				0A0CC5DB2367AFAD004DE91D /* SCAssetUtils.cpp in Sources */,
+				FA4A203D237E373D00E52E22 /* SCFSMRunner.cpp in Sources */,
+				0A0C34E8202BFDC2003A7A31 /* SCActor.cpp in Sources */,
+				0A67CB171F81E8EA00FED9A5 /* SCDataBlock.cpp in Sources */,
+				0A67CAEB1F813C9500FED9A5 /* SCMemAllocator.cpp in Sources */,
+				0A67CB101F81E4CF00FED9A5 /* SCDateTime.cpp in Sources */,
+				0A41B3361FE679E3003945EB /* SCBinderCocos.cpp in Sources */,
+				0AF447DD229FA5EA00806DF1 /* SCLanguage.cpp in Sources */,
+				0AF3CB9E202C429000EFACB4 /* SCNodeClickable.cpp in Sources */,
+				0A0C34E9202BFDC2003A7A31 /* SCBehaviorCocos.cpp in Sources */,
+				0A0C34E4202BFDC2003A7A31 /* SCStage.cpp in Sources */,
+				0A41B3811FEA3706003945EB /* SCViewController.cpp in Sources */,
+				0A28035A1FAB073B00E0174C /* SCDictionary.cpp in Sources */,
+				FA4A203E237E373D00E52E22 /* SCFSMBuilder.cpp in Sources */,
+				0A41B3651FE946B8003945EB /* SCString.cpp in Sources */,
+				0A75E4382014DB5100918565 /* SCViewBuilder.cpp in Sources */,
+				0A67CB091F81DF7100FED9A5 /* SCValue.cpp in Sources */,
+				0A0C34E2202BFDC2003A7A31 /* SCStrategy.cpp in Sources */,
+				0A0C34DF202BFDC2003A7A31 /* SCBehaviorStage.cpp in Sources */,
+				0A75E4402014E6B300918565 /* SCUIArg.cpp in Sources */,
+				0A41B3471FE7D9FC003945EB /* SCWatchString.cpp in Sources */,
+				0A6218E12004C6F600459055 /* SCEventEmitter.cpp in Sources */,
+				0A41B3441FE7C5F0003945EB /* SCRefHolder.cpp in Sources */,
+				0A0C34E5202BFDC2003A7A31 /* SCMessage.cpp in Sources */,
+				0ACD871720651BF60029757F /* SCRadioGroup.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0A67CA851F80E31700FED9A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0A67CA861F80E31700FED9A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A67CA881F80E31700FED9A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"SPEEDCC_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../cocos2d-x/v3",
+					"$(SRCROOT)/../../../cocos2d-x/v3/cocos/audio/include",
+					"$(SRCROOT)/../../../cocos2d-x/v3/cocos",
+					"$(SRCROOT)/../../../cocos2d-x/v3/extensions",
+					"$(SRCROOT)/../../../cocos2d-x/v3/external",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A67CA891F80E31700FED9A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = "";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../cocos2d-x/v3",
+					"$(SRCROOT)/../../../cocos2d-x/v3/cocos/audio/include",
+					"$(SRCROOT)/../../../cocos2d-x/v3/cocos",
+					"$(SRCROOT)/../../../cocos2d-x/v3/extensions",
+					"$(SRCROOT)/../../../cocos2d-x/v3/external",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A67CA791F80E31700FED9A5 /* Build configuration list for PBXProject "speedcc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A67CA851F80E31700FED9A5 /* Debug */,
+				0A67CA861F80E31700FED9A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A67CA871F80E31700FED9A5 /* Build configuration list for PBXNativeTarget "libspeedcc-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A67CA881F80E31700FED9A5 /* Debug */,
+				0A67CA891F80E31700FED9A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A67CA761F80E31700FED9A5 /* Project object */;
+}

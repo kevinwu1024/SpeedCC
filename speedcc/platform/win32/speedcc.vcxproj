@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{6B009FDF-A15E-4B8A-9BB8-AE712C842DA6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>speedcc</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>libSpeedCC</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\..\..\cocos2d-x\v3\cocos\audio\include;..\..\..\cocos2d-x\v3\external\win32-specific\gles\include\OGLES;..\..\..\cocos2d-x\v3\external\glfw3\include\win32;..\..\..\cocos2d-x\v3;..\..\..\cocos2d-x\v3\external;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;COCOS2DXWIN32_EXPORTS;_WINDOWS;_LIB;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;COCOS2D_DEBUG=1;GL_GLEXT_PROTOTYPES;SPEEDCC_FEATURE_ENABLE_MEMORY_POOL</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\include;../../../cocos2d-x/v3/cocos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4251;4819</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libcocos2d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;SPEEDCC_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;SPEEDCC_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;SPEEDCC_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\base\SCBaseMacros.h" />
+    <ClInclude Include="..\..\base\SCBinder.h" />
+    <ClInclude Include="..\..\base\SCBufferRefT.h" />
+    <ClInclude Include="..\..\base\SCDataBlock.h" />
+    <ClInclude Include="..\..\base\SCDateTime.h" />
+    <ClInclude Include="..\..\base\SCDictionary.h" />
+    <ClInclude Include="..\..\base\SCMemAllocator.h" />
+    <ClInclude Include="..\..\base\SCObject.h" />
+    <ClInclude Include="..\..\base\SCObjPtrT.h" />
+    <ClInclude Include="..\..\base\SCObjRefT.h" />
+    <ClInclude Include="..\..\base\SCString.h" />
+    <ClInclude Include="..\..\base\SCTemplateDef.h" />
+    <ClInclude Include="..\..\base\SCTemplateUtils.h" />
+    <ClInclude Include="..\..\base\SCValue.h" />
+    <ClInclude Include="..\..\base\SCVersion.h" />
+    <ClInclude Include="..\..\base\SCWatchNumberT.h" />
+    <ClInclude Include="..\..\base\SCWatchString.h" />
+    <ClInclude Include="..\..\cocos\SCBinderCocos.h" />
+    <ClInclude Include="..\..\cocos\SCCocosDef.h" />
+    <ClInclude Include="..\..\cocos\SCEventEmitter.h" />
+    <ClInclude Include="..\..\cocos\SCNodeAttachment.h" />
+    <ClInclude Include="..\..\cocos\SCNodeClickable.h" />
+    <ClInclude Include="..\..\cocos\SCNodeStyle.h" />
+    <ClInclude Include="..\..\cocos\SCNodeUtils.h" />
+    <ClInclude Include="..\..\cocos\SCRadioGroup.h" />
+    <ClInclude Include="..\..\cocos\SCRefHolder.h" />
+    <ClInclude Include="..\..\cocos\SCUIArg.h" />
+    <ClInclude Include="..\..\cocos\SCView.h" />
+    <ClInclude Include="..\..\cocos\SCViewBuilder.h" />
+    <ClInclude Include="..\..\cocos\SCViewController.h" />
+    <ClInclude Include="..\..\cocos\SCViewControllerLog.h" />
+    <ClInclude Include="..\..\cocos\SCViewMacros.h" />
+    <ClInclude Include="..\..\cocos\SCViewNavigator.h" />
+    <ClInclude Include="..\..\network\SCHttpFetcher.h" />
+    <ClInclude Include="..\..\SpeedCC.h" />
+    <ClInclude Include="..\..\stage\SCBehaviorCocos.h" />
+    <ClInclude Include="..\..\stage\SCBehaviorCommon.h" />
+    <ClInclude Include="..\..\stage\SCBehaviorStage.h" />
+    <ClInclude Include="..\..\stage\SCEntity.h" />
+    <ClInclude Include="..\..\stage\SCFSMBuilder.h" />
+    <ClInclude Include="..\..\stage\SCFSMMacros.h" />
+    <ClInclude Include="..\..\stage\SCFSMRunner.h" />
+    <ClInclude Include="..\..\stage\SCID.h" />
+    <ClInclude Include="..\..\stage\SCMessage.h" />
+    <ClInclude Include="..\..\stage\SCMessageDefaultProc.h" />
+    <ClInclude Include="..\..\stage\SCMessageDispatch.h" />
+    <ClInclude Include="..\..\stage\SCPlayObject.h" />
+    <ClInclude Include="..\..\stage\SCStage.h" />
+    <ClInclude Include="..\..\stage\SCStageMacros.h" />
+    <ClInclude Include="..\..\stage\SCStrategy.h" />
+    <ClInclude Include="..\..\stage\SCTriggerT.h" />
+    <ClInclude Include="..\..\system\SCAssetUtils.h" />
+    <ClInclude Include="..\..\system\SCAudioManager.h" />
+    <ClInclude Include="..\..\system\SCConfig.h" />
+    <ClInclude Include="..\..\system\SCLanguage.h" />
+    <ClInclude Include="..\..\system\SCSetting.h" />
+    <ClInclude Include="..\..\system\SCStore.h" />
+    <ClInclude Include="..\..\system\SCSystem.h" />
+    <ClInclude Include="..\SCOSSystem.h" />
+    <ClInclude Include="SCWinTime.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\base\SCBinder.cpp" />
+    <ClCompile Include="..\..\base\SCDataBlock.cpp" />
+    <ClCompile Include="..\..\base\SCDateTime.cpp" />
+    <ClCompile Include="..\..\base\SCDictionary.cpp" />
+    <ClCompile Include="..\..\base\SCMemAllocator.cpp" />
+    <ClCompile Include="..\..\base\SCObject.cpp" />
+    <ClCompile Include="..\..\base\SCString.cpp" />
+    <ClCompile Include="..\..\base\SCValue.cpp" />
+    <ClCompile Include="..\..\base\SCVersion.cpp" />
+    <ClCompile Include="..\..\base\SCWatchString.cpp" />
+    <ClCompile Include="..\..\cocos\SCBinderCocos.cpp" />
+    <ClCompile Include="..\..\cocos\SCEventEmitter.cpp" />
+    <ClCompile Include="..\..\cocos\SCNodeAttachment.cpp" />
+    <ClCompile Include="..\..\cocos\SCNodeClickable.cpp" />
+    <ClCompile Include="..\..\cocos\SCNodeStyle.cpp" />
+    <ClCompile Include="..\..\cocos\SCNodeUtils.cpp" />
+    <ClCompile Include="..\..\cocos\SCRadioGroup.cpp" />
+    <ClCompile Include="..\..\cocos\SCRefHolder.cpp" />
+    <ClCompile Include="..\..\cocos\SCUIArg.cpp" />
+    <ClCompile Include="..\..\cocos\SCView.cpp" />
+    <ClCompile Include="..\..\cocos\SCViewBuilder.cpp" />
+    <ClCompile Include="..\..\cocos\SCViewController.cpp" />
+    <ClCompile Include="..\..\cocos\SCViewControllerLog.cpp" />
+    <ClCompile Include="..\..\cocos\SCViewNavigator.cpp" />
+    <ClCompile Include="..\..\network\SCHttpFetcher.cpp" />
+    <ClCompile Include="..\..\stage\SCEntity.cpp" />
+    <ClCompile Include="..\..\stage\SCBehaviorCocos.cpp" />
+    <ClCompile Include="..\..\stage\SCBehaviorCommon.cpp" />
+    <ClCompile Include="..\..\stage\SCBehaviorStage.cpp" />
+    <ClCompile Include="..\..\stage\SCFSMBuilder.cpp" />
+    <ClCompile Include="..\..\stage\SCFSMRunner.cpp" />
+    <ClCompile Include="..\..\stage\SCMessage.cpp" />
+    <ClCompile Include="..\..\stage\SCMessageDefaultProc.cpp" />
+    <ClCompile Include="..\..\stage\SCMessageDispatch.cpp" />
+    <ClCompile Include="..\..\stage\SCPlayObject.cpp" />
+    <ClCompile Include="..\..\stage\SCStage.cpp" />
+    <ClCompile Include="..\..\stage\SCStrategy.cpp" />
+    <ClCompile Include="..\..\system\SCAssetUtils.cpp" />
+    <ClCompile Include="..\..\system\SCAudioManager.cpp" />
+    <ClCompile Include="..\..\system\SCLanguage.cpp" />
+    <ClCompile Include="..\..\system\SCSetting.cpp" />
+    <ClCompile Include="..\..\system\SCStore.cpp" />
+    <ClCompile Include="..\..\system\SCSystem.cpp" />
+    <ClCompile Include="..\SCOSSystem.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="SCWin32AppEnv.cpp" />
+    <ClCompile Include="SCWin32System.cpp" />
+    <ClCompile Include="SCWinTime.cpp" />
+    <ClCompile Include="speedcc.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\cocos2d-x\v3\cocos\2d\libcocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

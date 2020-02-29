@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\base">
+      <UniqueIdentifier>{bf95442a-34e8-4e69-943d-b27173e305d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cocos">
+      <UniqueIdentifier>{a92c7e5c-1d5b-4b2f-af1e-00554cb80a93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\system">
+      <UniqueIdentifier>{d373aeba-1436-423d-bc35-c6770ebac6cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\stage">
+      <UniqueIdentifier>{27827fa3-b3e1-4b2e-8d48-42f15c557956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\network">
+      <UniqueIdentifier>{119f385e-9761-418b-91a6-924b33c409c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\platform">
+      <UniqueIdentifier>{902cf5d0-d5aa-462b-9f5f-cd27f9d9625b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\base">
+      <UniqueIdentifier>{3f51cc4c-614a-4a36-b4a8-2ff7e7d7941f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\cocos">
+      <UniqueIdentifier>{aeabf1c6-5dce-4c35-b687-0f3d38845580}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\network">
+      <UniqueIdentifier>{5c91cb9a-7752-4b95-9719-bd04242f2c8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\platform">
+      <UniqueIdentifier>{96807f8b-2bf5-4e2d-942d-78f035779d48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\stage">
+      <UniqueIdentifier>{1ddd369c-465d-479d-a45b-61ed87e7153c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\system">
+      <UniqueIdentifier>{6894dc45-de0f-4b5b-9694-028241965ffd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\platform\win32">
+      <UniqueIdentifier>{11cdf00c-3cb4-477f-9633-8db117e5f005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\platform\win32">
+      <UniqueIdentifier>{47611489-e7d4-4c20-9e03-b876d87a1e87}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\SCBaseMacros.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\SCBinder.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\SCBufferRefT.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\SCDataBlock.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\SCDateTime.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\SCDictionary.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\SCMemAllocator.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\SCObject.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\SCObjPtrT.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\SCObjRefT.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\SCString.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\SCTemplateDef.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\SCTemplateUtils.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\SCValue.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\SCVersion.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\SCWatchNumberT.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\SCWatchString.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cocos\SCUIArg.h">
+      <Filter>Header Files\cocos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cocos\SCRefHolder.h">
+      <Filter>Header Files\cocos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cocos\SCRadioGroup.h">
+      <Filter>Header Files\cocos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cocos\SCNodeUtils.h">
+      <Filter>Header Files\cocos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cocos\SCNodeStyle.h">
+      <Filter>Header Files\cocos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cocos\SCNodeClickable.h">
+      <Filter>Header Files\cocos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cocos\SCNodeAttachment.h">
+      <Filter>Header Files\cocos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cocos\SCEventEmitter.h">
+      <Filter>Header Files\cocos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cocos\SCCocosDef.h">
+      <Filter>Header Files\cocos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cocos\SCBinderCocos.h">
+      <Filter>Header Files\cocos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\network\SCHttpFetcher.h">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SCOSSystem.h">
+      <Filter>Header Files\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stage\SCBehaviorCocos.h">
+      <Filter>Header Files\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stage\SCBehaviorCommon.h">
+      <Filter>Header Files\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stage\SCBehaviorStage.h">
+      <Filter>Header Files\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stage\SCID.h">
+      <Filter>Header Files\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stage\SCMessage.h">
+      <Filter>Header Files\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stage\SCMessageDefaultProc.h">
+      <Filter>Header Files\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stage\SCMessageDispatch.h">
+      <Filter>Header Files\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stage\SCStage.h">
+      <Filter>Header Files\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stage\SCStageMacros.h">
+      <Filter>Header Files\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stage\SCStrategy.h">
+      <Filter>Header Files\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stage\SCTriggerT.h">
+      <Filter>Header Files\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\system\SCAudioManager.h">
+      <Filter>Header Files\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\system\SCSetting.h">
+      <Filter>Header Files\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\system\SCStore.h">
+      <Filter>Header Files\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\system\SCSystem.h">
+      <Filter>Header Files\system</Filter>
+    </ClInclude>
+    <ClInclude Include="SCWinTime.h">
+      <Filter>Header Files\platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SpeedCC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cocos\SCView.h">
+      <Filter>Header Files\cocos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cocos\SCViewBuilder.h">
+      <Filter>Header Files\cocos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cocos\SCViewController.h">
+      <Filter>Header Files\cocos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cocos\SCViewMacros.h">
+      <Filter>Header Files\cocos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cocos\SCViewNavigator.h">
+      <Filter>Header Files\cocos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\system\SCLanguage.h">
+      <Filter>Header Files\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\system\SCAssetUtils.h">
+      <Filter>Header Files\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cocos\SCViewControllerLog.h">
+      <Filter>Header Files\cocos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stage\SCFSMBuilder.h">
+      <Filter>Header Files\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stage\SCFSMMacros.h">
+      <Filter>Header Files\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stage\SCFSMRunner.h">
+      <Filter>Header Files\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stage\SCPlayObject.h">
+      <Filter>Header Files\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\system\SCConfig.h">
+      <Filter>Header Files\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stage\SCEntity.h">
+      <Filter>Header Files\stage</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="speedcc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\SCBinder.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\SCDataBlock.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\SCDateTime.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\SCDictionary.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\SCMemAllocator.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\SCObject.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\SCString.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\SCValue.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\SCVersion.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\SCWatchString.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cocos\SCBinderCocos.cpp">
+      <Filter>Source Files\cocos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cocos\SCEventEmitter.cpp">
+      <Filter>Source Files\cocos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cocos\SCNodeAttachment.cpp">
+      <Filter>Source Files\cocos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cocos\SCNodeClickable.cpp">
+      <Filter>Source Files\cocos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cocos\SCNodeStyle.cpp">
+      <Filter>Source Files\cocos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cocos\SCNodeUtils.cpp">
+      <Filter>Source Files\cocos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cocos\SCRadioGroup.cpp">
+      <Filter>Source Files\cocos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cocos\SCRefHolder.cpp">
+      <Filter>Source Files\cocos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cocos\SCUIArg.cpp">
+      <Filter>Source Files\cocos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\system\SCAudioManager.cpp">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\system\SCSetting.cpp">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\system\SCStore.cpp">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\system\SCSystem.cpp">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stage\SCBehaviorCocos.cpp">
+      <Filter>Source Files\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stage\SCBehaviorCommon.cpp">
+      <Filter>Source Files\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stage\SCBehaviorStage.cpp">
+      <Filter>Source Files\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stage\SCMessage.cpp">
+      <Filter>Source Files\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stage\SCMessageDefaultProc.cpp">
+      <Filter>Source Files\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stage\SCMessageDispatch.cpp">
+      <Filter>Source Files\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stage\SCStage.cpp">
+      <Filter>Source Files\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stage\SCStrategy.cpp">
+      <Filter>Source Files\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\network\SCHttpFetcher.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SCOSSystem.cpp">
+      <Filter>Source Files\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="SCWinTime.cpp">
+      <Filter>Source Files\platform\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="SCWin32AppEnv.cpp">
+      <Filter>Source Files\platform\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="SCWin32System.cpp">
+      <Filter>Source Files\platform\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cocos\SCView.cpp">
+      <Filter>Source Files\cocos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cocos\SCViewBuilder.cpp">
+      <Filter>Source Files\cocos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cocos\SCViewController.cpp">
+      <Filter>Source Files\cocos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cocos\SCViewNavigator.cpp">
+      <Filter>Source Files\cocos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\system\SCLanguage.cpp">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\system\SCAssetUtils.cpp">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stage\SCFSMBuilder.cpp">
+      <Filter>Source Files\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stage\SCFSMRunner.cpp">
+      <Filter>Source Files\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cocos\SCViewControllerLog.cpp">
+      <Filter>Source Files\cocos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stage\SCPlayObject.cpp">
+      <Filter>Source Files\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stage\SCEntity.cpp">
+      <Filter>Source Files\stage</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
